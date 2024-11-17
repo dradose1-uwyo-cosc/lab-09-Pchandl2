@@ -1,8 +1,8 @@
-# Your Name Here
+# Peyton Chandler
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
-# Lab Section:
+# 11/14/24
+# Lab 09
+# Lab Section: 11
 # Sources, people worked with, help given to:
 # Your
 # Comments
@@ -34,7 +34,24 @@
 # - Assign the parameter for size to a size attribute.
 # - Assign the parameter for sauce to the attribute.
 # - Create the toppings attribute, starting off as a list only holding cheese.
-
+class Pizza:
+    def __init__(self, size, sauce, toppings):
+        self.toppings = ["cheese"]
+        self.sauce = ["red"]
+    def getSize(self):
+        return self.size
+    def getSauce(self):
+        return self.sauce
+    def getToppings(self)
+        return self.toppings
+    def setSize(self, size):
+        if size.isdigit() and int(size) >= 10:
+            self.size = int(size)
+        else:
+            self.size = 10
+    def setToppings(self, toppings):
+        for topping in toppings:
+            self.topping.append(topping)
 
 # You will be creating a Pizzeria class with the following attributes:
 # - orders, the number of orders placed. Should start at 0.
@@ -69,7 +86,9 @@
 #   - The total price.
 # - getNumberOfOrders()
 #   - This will simply return the number of orders.
-
+class Pizzeria
+    def __init__(self, orders, price_per_topping, price_per_inch, pizzas):
+     
 
 # - Declare your pizzeria object.
 # - Enter a while loop to ask if the user wants to order a pizza.
